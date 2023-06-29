@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,10 +16,21 @@ class MyApp extends StatelessWidget {
           title: Text('Tharun Demo'),
         ),
         body: Center(
-          child: Image.network(
-            'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg', // Replace with your image URL
-            width: 350,
-            height: 400,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.network(
+                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg', // Replace with your image URL
+                width: 350,
+                height: 400,
+              ),
+              Text(
+                'Little owl',
+                style: GoogleFonts.capriola(
+                  fontSize: 40,
+                ),
+              ),
+            ],
           ),
         ),
       ),
